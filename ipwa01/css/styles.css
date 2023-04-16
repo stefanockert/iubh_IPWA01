@@ -1,0 +1,9 @@
+@font-face {
+    font-family: imprintMtShadow;
+    src: url(../fonts/shadow.woff);
+}
+
+.headline-font {
+    font-family: imprintMTShadow;
+    font-size: xx-large;
+}
