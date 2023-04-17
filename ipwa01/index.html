@@ -15,11 +15,11 @@
     <!--### VueJS ###-->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
-    <!--### Individual CSS ###-->
+    <!--### Individual Javascript ###-->
     <script src="javascript/javascript.js"></script>
   </head>
 
-  <body>
+  <body id="bodyElement">
     <header class="d-flex justify-content-between">
       <span class="d-inline-flex justify-content-lg-start">
         <span class="navbar navbar-light bg-white">
@@ -66,7 +66,7 @@
 
     <main class="d-flex">
       <!--### Navigation ###-->
-      <div id="visible-left" onload="visibleLeft()">
+      <div id="visible-left">
         <nav class="d-flex flex-shrink-0 p-2" style="width: 200px">
           <ul class="nav mb-auto">
             <li class="nav-item">
@@ -140,7 +140,7 @@
         </section>
       </div>
 
-      <div id="visible-right" onload="visibleRight()">
+      <div id="visible-right">
         <nav class="d-flex flex-shrink-0 p-2" style="width: 200px">
           <ul class="nav mb-auto">
             <li class="nav-item">
@@ -173,4 +173,5 @@
       </ul>
     </footer>
   </body>
+    <script> document.getElementById("bodyElement").addEventListener("load", menuVisibility());</script>
 </html>
